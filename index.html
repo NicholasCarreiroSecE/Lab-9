@@ -1,25 +1,38 @@
 <html>
-    <head>
 
-        <title>Interactive Gallery</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<head>
 
-    </head>
+    <title>Interactive Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <body>
-        
-        <header>Interactive Gallery</header>
-        <section id="filter-section">
+</head>
 
-        </section>
+<body>
 
-        <section id="gallery">
+    <header>Interactive Gallery</header>
+    <section id="filter-section">
+        <button class="filter-btn" data-category="all">All</button>
+        <button class="filter-btn" data-category="portrait">Portrait</button>
+        <button class="filter-btn" data-category="astronomy">Astronomy</button>
+        <button class="filter-btn" data-category="landscape">Landscape</button>
+    </section>
 
-        </section>
+    <section id="gallery">
+        <div class="gallery-item" data-category="portrait"><img src="portrait1.jpg" alt="Portrait 1"></div>
+        <div class="gallery-item" data-category="portrait"><img src="portrait2.jpg" alt="Portrait 2"></div>
+        <div class="gallery-item" data-category="portrait"><img src="portrait3.jpg" alt="Portrait 3"></div>
+        <div class="gallery-item" data-category="astronomy"><img src="astronomy1.jpg" alt="Astronomy 1"></div>
+        <div class="gallery-item" data-category="astronomy"><img src="astronomy2.jpg" alt="Astronomy 2"></div>
+        <div class="gallery-item" data-category="astronomy"><img src="astronomy3.jpg" alt="Astronomy 3"></div>
+        <div class="gallery-item" data-category="landscape"><img src="landscape1.jpg" alt="Landscape 1"></div>
+        <div class="gallery-item" data-category="landscape"><img src="landscape2.jpg" alt="Landscape 2"></div>
+        <div class="gallery-item" data-category="landscape"><img src="landscape3.jpg" alt="Landscape 3"></div>
+    </section>
 
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 
-    </body>
+</body>
+
 </html>
