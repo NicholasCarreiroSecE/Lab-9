@@ -10,7 +10,7 @@ $(document).ready(function () {
         });
     });
 
-    $('.gallery-item').click(function () { 
+    $('.gallery-item').click(function () {
         const imgSrc = $(this).find('img').attr('src'); // Get the image source from the clicked gallery item
         $('#lightbox-image').attr('src', imgSrc); // Set the image source in the lightbox
         $('#lightbox').fadeIn(); // Show the lightbox
